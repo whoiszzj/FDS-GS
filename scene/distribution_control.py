@@ -4,7 +4,7 @@ from gaussian_renderer import render
 from scene import GaussianModel
 from arguments import OptimizationParams
 from utils.loss_utils import l1_loss, ssim
-from utils.confidence_utils import projection_in_image, compute_confidence_wrapper, compute_confidence_sample_wrapper
+from utils.confidence_utils import projection_in_image, compute_confidence_sample_wrapper
 from utils.debug_utils import save_deleted_gaussians_confidence, \
     save_added_gaussians, save_confidence, save_viewspace_gradient, \
    save_opacity, save_deleted_gaussians, save_densified_points

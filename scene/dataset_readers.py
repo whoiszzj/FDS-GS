@@ -22,7 +22,6 @@ from pathlib import Path
 from plyfile import PlyData, PlyElement
 from utils.sh_utils import SH2RGB
 from scene.gaussian_model import BasicPointCloud
-from utils.mvs_utils import read_bin_mat
 
 
 class CameraInfo(NamedTuple):
