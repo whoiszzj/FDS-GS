@@ -1,0 +1,12 @@
+*.pyc
+.vscode
+*.idea
+*__pycache__/
+output
+data
+mytest
+*build/
+*.egg-info/
+*.egg/
+*extlibs/
+*install/
