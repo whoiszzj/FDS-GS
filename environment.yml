@@ -1,4 +1,4 @@
-name: gaussian_splatting
+name: FDS-GS
 channels:
   - pytorch
   - conda-forge
@@ -8,10 +8,14 @@ dependencies:
   - plyfile
   - python=3.7.13
   - pip=22.3.1
-  - pytorch=2.0.1
-  - torchaudio=2.0.2
-  - torchvision=0.15.2
+  - pytorch=2.4.1+cu118
+  - torchaudio=2.4.1+cu118
+  - torchvision=0.19.1+cu118
   - tqdm
+  - tensorboard
+  - tensorboardX
+  - scipy
+  - scikit-image
   - pip:
     - submodules/diff-gaussian-rasterization
     - submodules/simple-knn
