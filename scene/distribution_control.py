@@ -152,8 +152,9 @@ class DistributionControl:
             cam1 = self.all_cameras[pair[0]]
             cam2 = self.all_cameras[pair[1]]
             selected_xyz = xyz[gaussians_id]  # [N'', 3]
+            selected_cov = cov[gaussians_id] if cov is not None else None
             if cov is not None:
-                confidence = compute_confidence_sample_wrapper(selected_xyz, cov, cam1, cam2)
+                confidence = compute_confidence_sample_wrapper(selected_xyz, selected_cov, cam1, cam2)
             else:
                 raise NotImplementedError("Confidence computation without covariance is not implemented")
             confidence_values[gaussians_id] = confidence
